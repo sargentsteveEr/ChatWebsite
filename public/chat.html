@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/newFile-1.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>uh</title>
+
+    <link rel="stylesheet" href="css/chatstyle.css">
+
+  </head>
+  <body>
+    <header>
+      <div id="chat-sidebar">
+        <div class="sidebar-top">
+          <h1>I Know Where You Live</h1>
+          <h2 id="room-name"></h2>
+          <button id="leave-btn">Leave Room</button>
+        </div>
+        <p id="theList">Current Users:</p>
+        <ul id="users"></ul>
+      </div>
+    </header>
+    <main>
+      <div id="messageList">
+        <ul id="messages"></ul>
+      </div>
+    </main>
+    <form id="form" action="">
+    <input id="input" maxlength="1000" /><button>Send</button>
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.5.3/qs.min.js" integrity="sha512-QDRTJ3599lRBFpBA8bJBhNdXZSXS3Zh/GPoqSv0Lm2u43EbSvYHdI3Kr/UmaW+styiZhlBRTSUlMMyYnWhGxTw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script src="js/script.js"></script>
+
+  </body>
+</html>
